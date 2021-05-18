@@ -56,6 +56,9 @@ const cambiarNombre = ( id, nombre ) => {
   socket.emit( 'cambiar-nombre-banda', {id, nombre} );
 }
 
+const crearBanda = ( nombre ) => {
+  socket.emit( 'crear-banda', {nombre} );
+}
 
 
 
@@ -88,7 +91,10 @@ const cambiarNombre = ( id, nombre ) => {
             />
         </div>
         <div className="col-4">
-          <BandAdd />
+          <BandAdd 
+          crearBanda={ crearBanda }
+          />
+          
         </div>
       </div>
 
