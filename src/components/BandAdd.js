@@ -8,10 +8,6 @@ export const BandAdd = ({ crearBanda }) => {
     const[valor, setValor] = useState('');
      const {socket} = useContext(SocketContext)
 
-    // const{ socket } = useSocket('http://localhost:8080')
-
-    
-
     const onSubmit= (ev) => {
         ev.preventDefault();
 

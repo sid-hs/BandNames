@@ -9,30 +9,6 @@ import { BandList } from '../components/BandList';
 function HomePage() {
 
   const{online} = useContext (SocketContext);
-//  const [ bands, setBands ] = useState([]);
-
-//  const { socket, online } = useSocket('http://localhost:8080'); 
- 
-// useEffect(() => {
-   
-//   })
-   
-// }, [socket])
-
-
-
-
-
-//const cambiarNombre = ( id, nombre ) => {
-
-//}
-
-//const crearBanda = ( nombre ) => {
-//  socket.emit( 'crear-banda', {nombre} );
-//}
-
-
-
 
   return (
     <div className="container">
